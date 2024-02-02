@@ -35,30 +35,30 @@ const BMI = () => {
         <div className='bgImg'>
             <div className='content py-8 px-10'>
                 <div className='text-center'>
-                <h2 className='text-3xl font-bold py-1'>Calculate Your BMI</h2>
-                <p className='text-base font-medium text-[#555454] py-1'>Body mass index,or BMI  is used to determine whether<br></br> you are a healthy weight range for your height</p>
+                <h2 className='text-3xl font-bold py-1 text-[#008080]'>Calculate Your BMI</h2>
+                <p className='text-base font-medium text-[#008080] py-1'>Body Mass Index,or BMI  is used to determine whether<br></br> you are in healthy weight range for your height</p>
                 </div>
 
                 <form onSubmit={findBMI} className='py-12 space-y-4'>
                       <div className='flex flex-col space-y-2'>
-                        <label className='font-medium text-[#505050]'>Your weight(kg)</label>
+                        <label className='font-medium text-[#008080]'>Your weight(kg)</label>
                         <input value={weight} onChange={(e) => setWeight(e.target.value)} type="text" className='border outline-none py-2 px-2 rounded-md' placeholder='Enter your weight' />
                       </div>
 
                       <div className='flex flex-col space-y-2'>
-                        <label className='font-medium text-[#505050]'>Your Height(in)</label>
+                        <label className='font-medium text-[#008080]'>Your Height(in)</label>
                         <input value={height} onChange={(e) => setHeight(e.target.value)} type="text" className='border outline-none py-2 px-2 rounded-md' placeholder='Enter your height' />
                       </div>
 
                       <div className='flex cursor-pointer space-x-4'>
-                         <input className='py-2 px-8 bg-[#0A66C2] text-white font-medium hover:bg-[#5aa7f3] duration-300 hover:text-[#262626] cursor-pointer' type="submit" value="Calculate" />
+                         <input className='py-2 px-8 bg-[#008080] text-white font-medium hover:bg-[#5aa7f3] duration-300 hover:text-[#262626] cursor-pointer' type="submit" value="Calculate" />
 
-                         <input onClick={reload} className='py-2 px-8 bg-[red] text-white font-medium hover:bg-[#f46363] duration-300 hover:text-[#262626] cursor-pointer' type="submit" value="Reload" />
+                         <input onClick={reload} className='py-2 px-8 bg-[#800020] text-white font-medium hover:bg-[#f46362] duration-300 hover:text-[#262626] cursor-pointer' type="submit" value="Reload" />
                       </div>
 
                       <div>
-                          <h2 className='text-lg font-medium py-2'>Your BMI is: {bmi}</h2>
-                          <p className='text-red-500'>{message}</p>
+                          <h2 className='text-lg font-medium py-2 text-[#008080]'>Your BMI is: {bmi}</h2>
+                          <p className='text-[#008080]'>{message}</p>
                       </div>
                 </form>
             </div>
